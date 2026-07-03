@@ -1,0 +1,2 @@
+controller,episodes,episodes_with_soc_penalty,total_soc_penalty_events,total_soc_penalty_value,episodes_with_action_protection,total_action_protection_events,total_blocked_discharge_events,total_clipped_discharge_events,minimum_soc_observed,mean_minimum_soc_per_episode
+MDP_PPO,231,213,213,21300.0,203,878,0,878,0.1448856120668353,0.1667033112308814

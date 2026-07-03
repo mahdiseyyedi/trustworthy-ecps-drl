@@ -1,0 +1,58 @@
+========================================================================================================================
+PPO HYPERPARAMETERS AND METHODOLOGY DETAILS: POMDP-LSTM-PPO
+========================================================================================================================
+        Category             Hyperparameter                                                                                 Value
+         General            Controller name                                                                        POMDP-LSTM-PPO
+         General                  Algorithm                                                                                   PPO
+         General                    Package                                                                     Stable-Baselines3
+         General                     Policy                                                                             MlpPolicy
+         General        Observation setting                          POMDP-LSTM-PPO, 20D observation with LSTM GHI/load forecasts
+         General            Training period                                                               Q1-Q3, index 0 to 26280
+         General            Total timesteps                                                                                500000
+         General                Random seed                                                                                    42
+PPO optimization              Learning rate                                                                                0.0003
+PPO optimization                    n_steps                                                                                  2048
+PPO optimization                 Batch size                                                                                    64
+PPO optimization                   n_epochs                                                                                    10
+PPO optimization    Gamma / discount factor                                                                                 0.999
+PPO optimization                 GAE lambda                                                                                  0.95
+PPO optimization                 Clip range                                                                                   0.2
+PPO optimization        Entropy coefficient                                                                                   0.0
+PPO optimization Value-function coefficient                                                                                   0.5
+PPO optimization          Max gradient norm                                                                                   0.5
+          Spaces          Observation space                                                         Box(0.0, 1.0, (20,), float32)
+          Spaces               Action space                                                       Box(-50.0, 50.0, (1,), float32)
+         Logging    Train monitor directory /content/drive/MyDrive/micro grid data/ppo_training_logs/POMDP_LSTM_PPO/monitor_train
+         Logging     Eval monitor directory  /content/drive/MyDrive/micro grid data/ppo_training_logs/POMDP_LSTM_PPO/monitor_eval
+         Logging      TensorBoard directory   /content/drive/MyDrive/micro grid data/ppo_training_logs/POMDP_LSTM_PPO/tensorboard
+         Logging       Evaluation directory          /content/drive/MyDrive/micro grid data/ppo_training_logs/POMDP_LSTM_PPO/eval
+========================================================================================================================
+
+Policy architecture summary:
+ActorCriticPolicy(
+  (features_extractor): FlattenExtractor(
+    (flatten): Flatten(start_dim=1, end_dim=-1)
+  )
+  (pi_features_extractor): FlattenExtractor(
+    (flatten): Flatten(start_dim=1, end_dim=-1)
+  )
+  (vf_features_extractor): FlattenExtractor(
+    (flatten): Flatten(start_dim=1, end_dim=-1)
+  )
+  (mlp_extractor): MlpExtractor(
+    (policy_net): Sequential(
+      (0): Linear(in_features=20, out_features=64, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=64, out_features=64, bias=True)
+      (3): Tanh()
+    )
+    (value_net): Sequential(
+      (0): Linear(in_features=20, out_features=64, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=64, out_features=64, bias=True)
+      (3): Tanh()
+    )
+  )
+  (action_net): Linear(in_features=64, out_features=1, bias=True)
+  (value_net): Linear(in_features=64, out_features=1, bias=True)
+)

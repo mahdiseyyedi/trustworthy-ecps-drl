@@ -1,0 +1,2 @@
+controller,episodes,episodes_with_soc_penalty,total_soc_penalty_events,total_soc_penalty_value,episodes_with_action_protection,total_action_protection_events,total_blocked_discharge_events,total_clipped_discharge_events,minimum_soc_observed,mean_minimum_soc_per_episode
+POMDP_LSTM_PPO,177,150,150,15000.0,93,290,0,290,0.1450264701331527,0.17077996659314915
