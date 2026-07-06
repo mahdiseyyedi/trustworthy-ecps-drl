@@ -123,7 +123,7 @@ The implementation is best described as a **semi-formal runtime shield** or a **
 
 ## Repository Contents
 
-Recommended public repository structure:
+
 
 ```text
 trustworthy-ecps-drl/
