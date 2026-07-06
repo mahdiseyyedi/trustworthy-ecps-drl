@@ -141,10 +141,6 @@ trustworthy-ecps-drl/
 └── LICENSE                     
 ```
 
-Suggested renaming of the supplied files:
-
-
-
 The supplied CSV contains 35,041 time-indexed rows at 15-minute resolution and includes load, temperature, GHI, electricity price, carbon intensity, calendar features, and +1 h to +4 h future-price features.
 
 The FMU was generated with OpenModelica v1.26.1 and exposes inputs for battery command, irradiance, temperature, and load, together with outputs including SOC, PV power, load, grid power, PCC voltage, battery throughput, loss proxy, residual, and stability flag.
