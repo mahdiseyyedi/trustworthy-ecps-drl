@@ -123,33 +123,23 @@ The implementation is best described as a **semi-formal runtime shield** or a **
 
 ## Repository Contents
 
-Recommended public repository structure:
+
 
 ```text
 trustworthy-ecps-drl/
 ├── README.md
 ├── notebooks/
-│   └── Trustworthy_ECPS_Pipeline.ipynb
+│   └── Untitled22 2.ipynb
 ├── data/
 │   └── master_environment_2023.csv
 ├── fmu/
 │   └── ECPS_DigitalTwin.fmu
 ├── docs/
 │   └── technical_brief.pdf
-├── outputs/                    # Generated results; optional
-├── requirements.txt            # Recommended addition
-├── .gitignore                  # Recommended addition
-└── LICENSE                     # Choose before public release
+├── outputs/                    # Generated results;
+├──                 
+└── LICENSE                     
 ```
-
-Suggested renaming of the supplied files:
-
-| Uploaded file | Recommended repository name |
-|---|---|
-| `Untitled22.ipynb` | `notebooks/Trustworthy_ECPS_Pipeline.ipynb` |
-| `master_environment_2023_augmented(2).csv` | `data/master_environment_2023.csv` |
-| `ECPS_DigitalTwin(1).fmu` | `fmu/ECPS_DigitalTwin.fmu` |
-| `technical document final .pdf` | `docs/technical_brief.pdf` |
 
 The supplied CSV contains 35,041 time-indexed rows at 15-minute resolution and includes load, temperature, GHI, electricity price, carbon intensity, calendar features, and +1 h to +4 h future-price features.
 
