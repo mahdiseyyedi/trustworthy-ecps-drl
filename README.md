@@ -129,7 +129,7 @@ Recommended public repository structure:
 trustworthy-ecps-drl/
 ├── README.md
 ├── notebooks/
-│   └── Trustworthy_ECPS_Pipeline.ipynb
+│   └── Untitled22 2.ipynb
 ├── data/
 │   └── master_environment_2023.csv
 ├── fmu/
