@@ -136,10 +136,9 @@ trustworthy-ecps-drl/
 │   └── ECPS_DigitalTwin.fmu
 ├── docs/
 │   └── technical_brief.pdf
-├── outputs/                    # Generated results; optional
-├── requirements.txt            # Recommended addition
-├── .gitignore                  # Recommended addition
-└── LICENSE                     # Choose before public release
+├── outputs/                    # Generated results;
+├──                 
+└── LICENSE                     
 ```
 
 Suggested renaming of the supplied files:
