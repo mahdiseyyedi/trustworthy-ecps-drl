@@ -129,7 +129,7 @@ The implementation is best described as a **semi-formal runtime shield** or a **
 trustworthy-ecps-drl/
 ├── README.md
 ├── notebooks/
-│   └── Untitled22 2.ipynb
+│   └── Trustworthy_ECPS_Pipeline.ipynb
 ├── data/
 │   └── master_environment_2023.csv
 ├── fmu/
